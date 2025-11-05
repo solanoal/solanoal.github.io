@@ -4,15 +4,32 @@ const allPosts = await getCollection("post");
 
 const { count } = Astro.props;
 
-function parseDate(dateStr) {
-  const [month, day, year] = dateStr.split(" ");
-  return new Date(`${month} ${parseInt(day)}, ${year}`);
+function parseDateFlexible(data) {
+  // Prefer ISO date if present
+  if (data?.date) {
+    const iso = new Date(data.date);
+    if (!isNaN(iso.getTime())) return iso;
+  }
+  // Fallback to dateFormatted like "July 14, 2024" or "January, 2024"
+  const df = data?.dateFormatted || "";
+  // Normalize: ensure a day exists and remove stray commas
+  // Examples:
+  //  - "January, 2024" -> "January 1, 2024"
+  //  - "July 14, 2024" stays the same
+  const hasDay = /\b\d{1,2},\s*\d{4}\b/.test(df);
+  const normalized = hasDay
+    ? df
+    : df.replace(/^(\w+)\s*,\s*(\d{4})$/, "$1 1, $2");
+  const parsed = new Date(normalized);
+  if (!isNaN(parsed.getTime())) return parsed;
+  // Final fallback: epoch 0 so bad dates go to the end
+  return new Date(0);
 }
 
 const sortedPosts = allPosts
   .map((post) => ({
     ...post,
-    date: parseDate(post.data.dateFormatted),
+    date: parseDateFlexible(post.data),
   }))
   .sort((a, b) => b.date.getTime() - a.date.getTime());
 
