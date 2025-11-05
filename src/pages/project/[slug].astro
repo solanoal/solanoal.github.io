@@ -16,7 +16,7 @@ const { Content } = await entry.render();
 <Layout frontmatter={entry.data}>
   {entry.data.screenshots && (
     <div class="mb-8 flex flex-wrap gap-4">
-      {entry.data.screenshots.map((src) => (
+      {entry.data.screenshots.map((src: string) => (
         <img src={src} alt={entry.data.title} style="max-width:290px; box-shadow:0 2px 16px #0001; border-radius:20px;" />
       ))}
     </div>

@@ -4,7 +4,7 @@ const allPosts = await getCollection("post");
 
 const { count } = Astro.props;
 
-function parseDateFlexible(data) {
+function parseDateFlexible(data: { date?: string; dateFormatted?: string }) {
   // Prefer ISO date if present
   if (data?.date) {
     const iso = new Date(data.date);
