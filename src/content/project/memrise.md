@@ -5,7 +5,6 @@ headerImage: "/assets/images/projects/memrise/memrise-header.jpg"
 cardImage: "/assets/images/projects/memrise.png"
 date: "2019-02-01"
 ---
----
 
 ![Memrise header](/assets/images/projects/memrise/memrise_header.png)
 *Learn a language as it's used now. Immerse yourself in lessons that feature videos of native speakers, so you start speaking real life language, fast.*
@@ -48,7 +47,8 @@ This project led to a **0.5% increase in conversion rate**.
 
 This modular philosophy proved so effective that it was later extended to the **Home screen**.
 
-<div style="display:flex; align-items:center; gap:40px;"> <img src="/assets/images/projects/memrise/home_modular.png" style="width:220px; border-radius:16px; box-shadow:0 2px 16px #0001;" /> <p>The modular approach empowered rapid experimentation and alignment across platforms. <a href="#">Read more about our modular approach →</a></p> </div>
+<div style="display:flex; align-items:center; gap:40px;"> <img src="/assets/images/projects/memrise/home_modular.png" style="width:220px; border-radius:16px; box-shadow:0 2px 16px #0001;" /> <p>The modular approach empowered rapid experimentation and alignment across platforms.</p> </div>
+
 
 ## Unifying Learning Logic Across Platforms
 
@@ -56,11 +56,18 @@ This modular philosophy proved so effective that it was later extended to the **
 As Memrise scaled, **platform parity** became a challenge.
 We introduced **Kotlin Multiplatform (KMP)** to unify our core learning logic — including the spaced repetition algorithm and learning session flow — ensuring consistent experiences across iOS, Android, and Web.
 
-This decision improved **cross-platform feature parity**, at the cost of some **engineering overhead** to maintain it. <a href="#">Read more about our crossplatform journey →</a>
+This decision improved **cross-platform feature parity**, at the cost of some **engineering overhead** to maintain it. 
+
+[Read more about our crossplatform journey →](/post/crossplatform_case_study_part_1)
+
 
 ## Delivering the “Communicate” Pillar
 
 Memrise’s pedagogy is built on three pillars: **Learn**, **Immerse**, and **Communicate**.
+
+<div style="width:100%; max-width:100%; display:grid; gap:12px;">
+  <img src="/assets/images/projects/memrise/three_pillars.webp" alt="Enjoystr iPad" style="display:block; width:100%; height:auto; border-radius:16px; box-shadow:0 2px 16px #0001;">
+</div>
 
 > “Each of these legs is crucial. Without one of them the stool would topple.”  
 > — *[The Memrise Story](https://www.memrise.com/blog/the-memrise-story)*
@@ -89,7 +96,9 @@ We finally delivered all three pillars — **Learn**, **Immerse**, and **Communi
 
 To connect words, videos, and conversations, we restructured our content model.  
 We removed rigid “levels” and introduced **Scenarios** — dynamic, context-based content units.  
-To ensure all platforms evolved together, even with an unbalanced team (more iOS than Android developers), we added another **Kotlin Multiplatform** module. <a href="#">Read more about our crossplatform journey →</a>
+To ensure all platforms evolved together, even with an unbalanced team (more iOS than Android developers), we added another **Kotlin Multiplatform** module. 
+
+[Read more about our crossplatform journey →](/post/crossplatform_case_study_part_2)
 
 <div style="display:flex; gap:12px; align-items:flex-start; flex-wrap:wrap;">
 

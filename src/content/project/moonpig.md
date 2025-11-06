@@ -74,7 +74,9 @@ When the team was downsized and all QAs were removed, I led an initiative to **r
 - Added **integration tests** to ensure system reliability  
 - Created a **one-click CI/CD delivery pipeline**, fully automating releases and allowing **any engineer to ship the app with a single button press**
 
-This automation drastically **reduced delivery time to zero** and made our release process more resilient and collaborative. <a href="#">Read more about the solution →</a>
+This automation drastically **reduced delivery time to zero** and made our release process more resilient and collaborative. 
+
+I gave a talk explaining the approach — [watch or read more →](/post/ios_astronauts_talk)
 
 ## Delivering Search in Time for Christmas
 
