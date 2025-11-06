@@ -12,6 +12,10 @@
 		"url": "/projects"
 	},
 	{
+		"name": "CV",
+		"url": "/cv"
+	},
+	{
 		"name": "About",
 		"url": "/about"
 	}
