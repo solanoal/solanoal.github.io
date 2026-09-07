@@ -1,5 +1,12 @@
 [
 	{
+		"dates": "February 2026 · Present",
+		"role": "App Squad Lead · Senior iOS Engineer",
+		"company": "Roamless",
+		"description": "Joined as a Senior iOS Engineer ahead of Roamless 2.0, bringing SMS, in-app messaging, and a rebrand. Helped the team adopt AI tools with safeguards for sensitive information, automated manual iOS delivery with Xcode Cloud, and introduced feature flags and A/B testing. Later promoted to App Squad Lead, working with product and Android and iOS engineers to deliver quality features that help users choose data plans suited to their needs and stay connected.",
+		"logo": "/assets/images/experiences/roamless_appstore_icon.jpg"
+	},
+	{
 		"dates": "February 2019 · October 2025",
 		"role": "Senior iOS Engineer",
 		"company": "Memrise",
