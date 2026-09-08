@@ -57,9 +57,17 @@ import Layout from "../layouts/main.astro";
           <div class="relative z-30 px-10">
             <img
               src="/assets/images/photo.png"
+              alt="Illustration of Alberto Solano with blue glasses, holding a coffee"
               loading="eager"
               decoding="auto"
-              class="relative z-30 w-full aspect-[790/1189] md:max-w-md mx-auto dark:-translate-y-0.5"
+              class="relative z-30 block dark:hidden w-full aspect-[790/1189] md:max-w-md mx-auto"
+            />
+            <img
+              src="/assets/images/photo-dark.png"
+              alt="Illustration of Alberto Solano with blue glasses, holding a coffee"
+              loading="eager"
+              decoding="auto"
+              class="relative z-30 hidden dark:block w-full aspect-[790/1189] md:max-w-md mx-auto"
             />
           </div>
           <div
